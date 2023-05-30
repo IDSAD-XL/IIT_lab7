@@ -1,11 +1,11 @@
 # EFK stack
 
-A sample environment running an [EFK stack][efk] on your local machine.
+A sample environment running an [ELK stack][elk] on your local machine.
 
 Includes:
 
 - [Elasticsearch][elasticsearch]
-- [Fluentd][fluentd]
+- [Logstash][logstash]
 - [Kibana][kibana]
 
 ## Introduction
@@ -24,17 +24,17 @@ While [Elasticsearch][elasticsearch] and [Kibana][kibana] are the reference prod
 The two most-popular data collectors are:
 
 - [Logstash][logstash], most known for being part of the [ELK Stack][elk]
-- [Fluentd][fluentd], used by communities of users of software such as [Docker][docker-fluentd] and [GCP][gcp-fluentd]
+- [Logstash][logstash], used by communities of users of software such as [Docker][docker-fluentd] and [GCP][gcp-fluentd]
 
-Logging systems using Fluentd as collector are usually referenced as [EFK stack][efk].
+Logging systems using Fluentd as collector are usually referenced as [ELK stack][elk].
 
-Aim of this repository is to run an EFK stack on your local machine using docker-compose.
+Aim of this repository is to run an ELK stack on your local machine using docker-compose.
 
 I'm not personally involved with companies supporting Logstash nor Fluentd.
 
 If you need help to choose between Logstash and Fluent, take a look to the [reference](#reference).
 
-## Launching the EFK stack
+## Launching the ELK stack
 
 ### Requirements
 
@@ -73,13 +73,13 @@ Please note that RESTed is not strictly necessary as any other REST client appli
 - [Fluentd vs. Logstash: A Comparison of Log Collectors | Logz.io](https://logz.io/blog/fluentd-logstash/)
 
 [elasticsearch]: https://www.elastic.co/products/elasticsearch
-[fluentd]: https://www.fluentd.org/
+[Logstash]: https://www.elastic.co/logstash/
 [kibana]: https://www.elastic.co/products/kibana
 [logstash]: https://www.elastic.co/products/logstash
 [elk]: https://www.elastic.co/videos/introduction-to-the-elk-stack
 [docker-fluentd]: https://docs.docker.com/reference/logging/fluentd/
 [gcp-fluentd]: https://github.com/GoogleCloudPlatform/google-fluentd
-[efk]: https://docs.openshift.com/enterprise/3.1/install_config/aggregate_logging.html#overview
+[elk]: https://www.elastic.co/what-is/elk-stack
 [docker]: https://www.docker.com/
 [docker-compose]: https://docs.docker.com/compose/
 [rested]: https://itunes.apple.com/au/app/rested-simple-http-requests/id421879749?mt=12
