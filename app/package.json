@@ -1,0 +1,28 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "A sample environment running an [EFK stack][efk] on your local machine.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtatarin/EFK-stack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vtatarin/EFK-stack/issues"
+  },
+  "homepage": "https://github.com/vtatarin/EFK-stack#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "node-telegram-bot-api": "^0.61.0",
+    "dotenv": "^16.0.3"
+  }
+}
